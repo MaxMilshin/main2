@@ -1,10 +1,5 @@
-fun isItPalindrom(s: String): String {
-    for (i in 0..(s.length) / 2) {
-        if (s[i] != s[s.length - 1 - i]) return "NO"
-    }
-    return "YES"
-}
+fun getSum(a: Int, b: Int) = a + b
 
 fun main() {
-    print(isItPalindrom(readLine()!!))
+    println(getSum(readLine()!!.toInt(), readLine()!!.toInt()))
 }
